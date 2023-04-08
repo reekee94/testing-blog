@@ -1,0 +1,45 @@
+{
+  "name": "nestjs-blog",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "start:watch": "nodemon",
+    "prestart:prod": "tsc",
+    "start:prod": "node dist/main.js",
+    "test": "jest --config=jest.json",
+    "test:watch": "jest --watch --config=jest.json",
+    "test:coverage": "jest --config=jest.json --coverage --coverageDirectory=coverage"
+  },
+  "author": "",
+  "license": "",
+  "dependencies": {
+    "@nestjs/common": "^7.0.5",
+    "@nestjs/core": "^7.0.5",
+    "@nestjs/microservices": "^7.0.5",
+    "@nestjs/platform-express": "^7.0.5",
+    "@nestjs/typeorm": "^7.0.0",
+    "argon2": "^0.26.2",
+    "class-transformer": "^0.2.3",
+    "class-validator": "^0.11.1",
+    "crypto": "^1.0.1",
+    "crypto-js": "^4.0.0",
+    "jsonwebtoken": "^8.5.1",
+    "passport-jwt": "^4.0.0",
+    "pg": "^8.10.0",
+    "reflect-metadata": "^0.1.13",
+    "rxjs": "^6.5.5",
+    "slug": "^1.1.0",
+    "typeorm": "^0.2.24",
+    "typescript": "^3.8.3"
+  },
+  "devDependencies": {
+    "@types/node": "^13.13.4",
+    "atob": ">=2.1.0",
+    "deep-extend": ">=0.5.1",
+    "extend": ">=3.0.2",
+    "nodemon": "^1.19.4",
+    "ts-node": "^8.9.1"
+  }
+}
